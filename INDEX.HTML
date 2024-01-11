@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação de PIN</title>
+
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <div id="pin-container">
+        <h2>Digite seu PIN:</h2>
+        <div style="position: relative;">
+          <input type="number" id="pinInput" min="0" max="9999" placeholder="Digite o PIN de 4 dígitos">
+          <button onclick="mostrarOcultarPin()" class="eye-icon">
+            <i id="eye-icon" class="fas fa-eye"></i>
+          </button>
+        </div>
+        <br>
+        <button onclick="verificarPin()">Enviar</button>
+    
+        <div id="feedback"></div>
+      </div>
+
+      <script src="javascript.js"></script>
+
+</body>
+</html>
+
